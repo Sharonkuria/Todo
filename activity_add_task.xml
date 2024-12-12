@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_blue"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Task Title -->
+    <EditText
+        android:id="@+id/editTextTaskTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@color/light_blue"
+        android:hint="Task Title"
+        android:inputType="text"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/gray" />
+
+    <!-- Task Description -->
+    <EditText
+        android:id="@+id/editTextTaskDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@color/light_blue"
+        android:hint="Task Description"
+        android:inputType="textMultiLine"
+        android:lines="4"
+        android:padding="10dp"
+        android:scrollbars="vertical"
+        android:textColor="@color/black"
+        android:textColorHint="@color/gray" />
+
+    <!-- Task Date -->
+    <EditText
+        android:id="@+id/editTextTaskDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@color/light_blue"
+        android:clickable="true"
+        android:focusable="false"
+        android:hint="Task Date (yyyy-MM-dd)"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/gray" />
+
+    <!-- Task Time -->
+    <EditText
+        android:id="@+id/editTextTaskTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:background="@color/light_blue"
+        android:clickable="true"
+        android:focusable="false"
+        android:hint="Task Time (HH:mm)"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/gray" />
+
+    <!-- Save Task Button -->
+    <Button
+        android:id="@+id/buttonSaveTask"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/red_700"
+        android:padding="12dp"
+        android:text="Save Task"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
+</LinearLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:background="@color/light_blue"
+    app:cardBackgroundColor="@color/material_dynamic_neutral_variant70"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp">
+
+    <!-- Rest of your layout here -->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Note Title -->
+        <TextView
+            android:id="@+id/textViewNoteTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="Note Title"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <!-- Note Content -->
+        <TextView
+            android:id="@+id/textViewNoteContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="Note Content"
+            android:textColor="@color/design_default_color_on_secondary"
+            android:textSize="14sp" />
+
+        <!-- Timestamp and Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal">
+
+            <!-- Timestamp -->
+            <TextView
+                android:id="@+id/textViewNoteTimestamp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="start"
+                android:text="Timestamp"
+                android:textColor="@color/material_dynamic_primary10"
+                android:textSize="12sp" />
+
+            <!-- Edit Button -->
+            <Button
+                android:id="@+id/buttonEditNote"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:backgroundTint="@color/teal_700"
+                android:text="Edit"
+                android:textColor="@color/light_blue"
+                android:textSize="12sp" />
+
+            <!-- Delete Button -->
+            <Button
+                android:id="@+id/buttonDeleteNote"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/purple_500"
+                android:text="Delete"
+                android:textColor="@color/light_blue"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

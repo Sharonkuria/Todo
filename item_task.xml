@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:layout_marginBottom="16dp"
+    android:background="?android:attr/selectableItemBackground" >
+
+    <!-- Task Title -->
+    <EditText
+        android:id="@+id/editTextTaskTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:hint="Task Title"
+        android:inputType="text"
+        android:padding="10dp"
+        android:textColor="#141313" />
+
+    <!-- Task Description -->
+    <EditText
+        android:id="@+id/editTextTaskDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:hint="Task Description"
+        android:inputType="textMultiLine"
+        android:padding="10dp"
+        android:textColor="#0F0E0E" />
+
+    <!-- Task Date -->
+    <TextView
+        android:id="@+id/textViewTaskDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:text="Date"
+        android:textColor="#1B1B1B"
+        android:textSize="14sp" />
+
+    <!-- Task Time -->
+    <TextView
+        android:id="@+id/textViewTaskTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="Time"
+        android:textColor="#070707"
+        android:textSize="14sp" />
+
+    <!-- Edit and Complete Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/light_blue"
+        android:gravity="end"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonEditTask"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:text="Edit"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/buttonCompleteTask"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Complete"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>
